@@ -1,6 +1,4 @@
-#TODO
-
-# Solve Elementary Shortest Path Problem with resource constraints.
+# Solve Elementary Shortest Path Problem with resource constraints and time wind
 # The algorithm is based on [1].
 # Features:
 #   * single source / single target
