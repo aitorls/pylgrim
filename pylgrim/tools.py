@@ -15,6 +15,8 @@ def decouple_source(G, source, source_in="source_in"):
     """Decouple the source {source} of a graph {G}, by duplicating the node, called {source_in} and moving all the in-edges to it.
     Returns the number of edges displaced."""
     
+    G.add_nodes_from( [(source_in, G.nodes[source])])
+
     in_edges_source = tuple(G.in_edges(source))
     n_in_edges_source = len(in_edges_source)
     if n_in_edges_source > 0:
